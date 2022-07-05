@@ -2,7 +2,7 @@ def call(String mavenGoal){
   
   if ("${mavenGoal}" == "Clean")
      {
-       sh "/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven3.8.4/bin/mvn clean"
+       sh "/home/ec2-user/ugo-node9/tools/hudson.tasks.Maven_MavenInstallation/Maven3.8.4/bin/mvn clean"
      }
   else if ("${mavenGoal}" == "Compile")
      {
