@@ -6,11 +6,11 @@ def call(String mavenGoal){
      }
   else if ("${mavenGoal}" == "Compile")
      {
-       sh "/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven3.8.4/bin/mvn clean compile"
+       sh "/home/ec2-user/ugo-node9/tools/hudson.tasks.Maven_MavenInstallation/Maven3.8.4/bin/mvn clean compile"
      }
   else if ("${mavenGoal}" == "Test")
      {
-       sh "/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven3.8.4/bin/mvn clean test"
+       sh "/home/ec2-user/ugo-node9/tools/hudson.tasks.Maven_MavenInstallation/Maven3.8.4/bin/mvn clean test"
      }
    else if ("${mavenGoal}" == "Package")
       {
